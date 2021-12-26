@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Raleway:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Limelight&family=Raleway:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Limelight', cursive;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+#all{
+    width: 100%;
+    display: block;
+}
+body{
+    display: flex;
+    background-color: #2A3F54;
+}
+nav{
+    width: 0;
+    position: fixed;
+    min-height: 100vh;
+    transition: width 0.5s ease-in-out;
+    z-index: 5;
+    overflow: hidden;
+}
+nav #nav_bg {
+    content: '';
+    background-color: #2a3f54;
+    transition: width 0.5s ease-in-out;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+}
+ul li a{
+font-family: 'Amiri', serif;
+}
+nav ul{
+    z-index: 1;
+    width: 100%;
+    /* background-color: #2a3f54; */
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.7s linear;
+}
+nav ul li{
+    font-size: 3rem;
+    color: aqua;
+    display: block;
+    width: 100%;
+    text-align: center;
+} 
+nav ul li a{
+    color: #fff;
+    transition: color 0.2s linear;
+    font-family: 'Raleway', sans-serif;
+}
+nav ul li a span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+}
+nav ul li a:hover{
+    color: royalblue;
+}
+header{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url("https://th.bing.com/th/id/R.afae70a0b66a0ab54559fd766be9b506?rik=AfP2xpP6atnEMQ&riu=http%3a%2f%2fpws.npru.ac.th%2fgowitcha%2fdata%2ffiles%2fIT_logo_BW.png&ehk=lw0tItIKsJtBFcyo%2f84l5Wkg3D%2fuF3KHz%2fL9wiRFoEI%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+#b1,#b2{
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    width: 1.5rem;
+}
+#b1 {
+    display: block;
+    left: 5px;
+    top: 50%;
+    z-index: 6;
+}
+#b2 {
+    display: none;
+    right: 5px;
+    top: 50%;
+    z-index: 6;
+}
+header::after{
+    content: '';
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -2;
+}
+header h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    word-spacing: 3px;
+    z-index: -1;
+}
+header h1 span{
+    color: aqua;
+}
+.main{
+    background: #eee;
+    padding-bottom: 50px;
+}
+.main ul li a{
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+.main ul li a:hover{
+    color: royalblue;
+}
+.main ul{
+    margin-top: 1%;
+    margin-bottom: 15%;
+    padding: 10px 15px;
+    border-right: 8px solid royalblue;
+    border-left: 8px solid royalblue;
+    height: 50%;
+    box-shadow:5px 5px 25px rgb(179 172 172);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: fit-content;
+}
+.main ul li{
+    padding: 30px 10px;
+    border-right: 2px #000 solid
+}
+.main ul li:nth-last-child(1){
+    border: none;
+}
+.main ul li a{
+    font-size: 1.2em;
+}
+.main h1{
+    text-align: center;
+    margin-bottom: 6%;
+    padding-top: 6%;
+    font-size: 6rem;
+    letter-spacing: 5px;
+    color: firebrick;
+    font-family: 'Amiri', serif;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main h1 span{
+    height: 4px;
+    width: 100%;
+    background-color: midnightblue;
+    display: inline-block;
+}
+.main h2{
+    font-size: 5rem;
+    text-align: center;
+    color: darkblue;
+}
+#Math .main h1{
+    color: royalblue;
+}
+#Chemistry .main h1{
+    color: teal;
+}
+#Computer .main h1{
+    color: green;
+}
+#English .main h1{
+    color: #000;
+}
+#Human .rights .main h1{
+    color: rgb(219, 209, 70);
+}
+.main .right .video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1%;
+}
+.main .right .video iframe{
+    min-width: 24%;
+    min-height: 35%;
+    margin-left: 0.35%;
+    margin-top: 0.3%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
